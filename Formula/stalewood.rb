@@ -5,21 +5,21 @@
 class Stalewood < Formula
   desc "Find and reap merged git worktrees"
   homepage "https://github.com/retif/stalewood"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/retif/stalewood/releases/download/v0.1.5/stalewood_0.1.5_darwin_amd64.tar.gz"
-      sha256 "14ff696c70cc47bf3a76ea59548ab143d983dd22398b9a3bda4511c5ba8142d9"
+      url "https://github.com/retif/stalewood/releases/download/v0.1.6/stalewood_0.1.6_darwin_amd64.tar.gz"
+      sha256 "15fc69b133ee30deb7706e97ba8ab0de6de83b2c25b094266947dcaab3a8b781"
 
       define_method(:install) do
         bin.install "stalewood"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/retif/stalewood/releases/download/v0.1.5/stalewood_0.1.5_darwin_arm64.tar.gz"
-      sha256 "edebd30254629d4a7747e704493d5c7c3e3f32b670afea5cf678f5449a1af05f"
+      url "https://github.com/retif/stalewood/releases/download/v0.1.6/stalewood_0.1.6_darwin_arm64.tar.gz"
+      sha256 "b32ac15df6f6a1064aaad6f0148a38619869b3eebcf6e056c1219d5cce0c2229"
 
       define_method(:install) do
         bin.install "stalewood"
@@ -29,15 +29,15 @@ class Stalewood < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/retif/stalewood/releases/download/v0.1.5/stalewood_0.1.5_linux_amd64.tar.gz"
-      sha256 "34e3762f6b55456cf9dca60cea640b54c428a9a7d268cae00076c40f742bed50"
+      url "https://github.com/retif/stalewood/releases/download/v0.1.6/stalewood_0.1.6_linux_amd64.tar.gz"
+      sha256 "43cc91f72eb92bc4da994e2e08e20599c943db84a9ecd1b5f1b499d233dc44c3"
       define_method(:install) do
         bin.install "stalewood"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/retif/stalewood/releases/download/v0.1.5/stalewood_0.1.5_linux_arm64.tar.gz"
-      sha256 "0ebe0024d6518880c195c22b27880604360027c93be4dea132662bedb7a7887b"
+      url "https://github.com/retif/stalewood/releases/download/v0.1.6/stalewood_0.1.6_linux_arm64.tar.gz"
+      sha256 "2b066526314a7e10412e765d5558ae56cb82a500946c1c7b8514fe85ac6ccbcc"
       define_method(:install) do
         bin.install "stalewood"
       end
